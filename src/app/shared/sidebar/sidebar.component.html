@@ -1,0 +1,31 @@
+ <mat-drawer-container class="example-container">
+        <mat-drawer mode="side" opened="true" style="background-color:rgb(200, 202, 202)">
+            <mat-nav-list>
+                <a mat-list-item routerLink="componente1">
+                    <p>Libros</p>
+                </a>
+            </mat-nav-list>
+            <mat-divider>
+            </mat-divider>
+            <mat-nav-list>
+                <a mat-list-item routerLink="componente2">
+                    <p>Autores</p>
+                </a>
+            </mat-nav-list>
+            <mat-divider>
+            </mat-divider>   
+            <mat-nav-list>
+                <a mat-list-item routerLink="componente3">
+                    <p>Busqueda</p>
+                </a>
+            </mat-nav-list>
+            
+          </mat-drawer>
+        <mat-drawer-content>
+          <router-outlet></router-outlet>
+        </mat-drawer-content>
+</mat-drawer-container>
+
+
+
+
